@@ -1,0 +1,155 @@
+.map {
+  width: 100%;
+}
+
+.map__container {
+  max-width: 1060px;
+  max-height: 668px;
+  margin: 0 auto;
+}
+
+.map__header {
+  max-width: 568px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.map__title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: #04004D;
+  text-align: center;
+}
+
+.map__text {
+  padding: 0;
+  max-width: 418px;
+  color: #848199;
+  text-align: center;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 8px auto 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map__body {
+  padding: 30px 0 45px 0;
+}
+
+.map__body img {
+  width: 100%;
+}
+
+.map .instructor {
+  margin: 100px 0;
+}
+
+.map .instructor__container {
+  border-radius: 4px;
+  height: 254px;
+  margin: 0 auto;
+  max-width: 1085px;
+  position: relative;
+  background-color: #04004D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map .instructor__left, .map .instructor__right {
+  top: 0;
+  width: 122px;
+  height: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.08)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.map .instructor__left {
+  left: 10%;
+}
+
+.map .instructor__right {
+  right: 10%;
+}
+
+.map .instructor__middle {
+  max-width: 434px;
+}
+
+.map .instructor__title {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 28px;
+  font-family: 'Playfair Display',serif;
+}
+
+.map .instructor__text {
+  padding: 12px 0px 12px 0px;
+  color: #ccc;
+  text-align: center;
+  font-weight: normal;
+  line-height: 14px;
+  font-size: 14px;
+}
+
+.map .instructor__btn {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map .instructor__btn .btn {
+  width: 129px;
+  color: #fff;
+  padding: 16px 20px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: normal;
+  line-height: 14px;
+  font-size: 14px;
+}
+
+.map .instructor__link {
+  margin-right: 20px;
+  background: #FF5722;
+  border: 1px solid #FF5722;
+  border-radius: 4px;
+}
+
+.map .instructor__outline-link {
+  color: #FF5722 !important;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid #FF5722;
+}
