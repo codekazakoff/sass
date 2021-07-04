@@ -1627,7 +1627,7 @@ img {
   margin-top: 2px;
 }
 .blog .blog__slider-item-content {
-  padding: 16.43px 17.39px 22.05px 15.81px;
+  padding: 14.43px 17.39px 20.05px 15.81px;
 }
 .blog .blog__slider-item-content-top {
   display: flex;
@@ -1695,6 +1695,15 @@ img {
 
   .blog__header {
     padding-left: 12px;
+  }
+}
+@media (max-width: 994px) {
+  .blog__slider-item-img {
+    margin-top: -2px;
+  }
+
+  .blog__btn {
+    margin-right: 25px;
   }
 }
 @media (max-width: 569px) {

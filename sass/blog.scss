@@ -73,8 +73,7 @@
 		}
 
 		&-content {
-			padding: 16.43px 17.39px 22.05px 15.81px;
-			// width: 315px;
+			padding: 14.43px 17.39px 20.05px 15.81px;
 			&-top {
 				@include display(flex,space-between,center);
 				color: #808080;
@@ -123,7 +122,7 @@
 }
 
 
-	
+
 
 @media (max-width: 1225px) {
 	.blog__container {
@@ -132,6 +131,19 @@
 	 .blog__header {
 		 padding-left: 12px;
 	 }
+}
+
+@media (max-width: 994px) {
+	.blog__slider-item-img {
+		  margin-top: -2px;
+	}
+	.blog__slider .slick-dots {
+		// position: relative;
+	}
+	.blog__btn {
+		margin-right: 25px;
+	}
+	
 }
 
 @media (max-width:569px) {

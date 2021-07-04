@@ -48,9 +48,9 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 992,
+        breakpoint: 995,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
       {
