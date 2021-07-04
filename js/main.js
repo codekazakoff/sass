@@ -1,67 +1,73 @@
-new Swiper(".pricing__body", {
-  //   loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-    clickable: true,
-  },
-  clickable: true,
-  simulateTouch: true,
-  touchRatio: 1,
-  touchAngle: 45,
-  grabCursor: true,
-  slideToClickedSlide: true,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
-  //  mousewheel: {
-  //    sensitivity: 3.65,
-  //  },
-  breakpoints: {
-    1368: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-    },
-    1023: {
-      slidesPerView: 3.2,
-      slidesPerGroup: 3.2,
-    },
-    768: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-    },
-    533: {
-      slidesPerView: 1.75,
-      slidesPerGroup: 2,
-    },
-    320: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-  },
-  slidesPerView: 4,
-  slidesPerGroup: 8,
-});
+$(document).ready(function () {
+  $(".pricing__slider").slick({
+    slidesToShow: 4.5,
+    dots: true,
+    speed: 1000,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 800,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 3.5,
+        },
+      },
+      {
+        breakpoint: 880,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 498,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 
-new Swiper(".blog__body", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-    clickable: true,
-  },
-  slidesPerView: 2,
+  $(".blog__slider").slick({
+    slidesToShow: 2,
+    dots: true,
+    speed: 1000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1125,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 476,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 });
-
 $(function () {
   $(".header__bars").click(() => {
     $(".header__content").addClass("active");

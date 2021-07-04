@@ -172,13 +172,14 @@
 }
 
 @media (max-width:660px) {
-	.subscription__cards {
-		display: block;
-	}
 	.subscription__card {
 		margin: 0 auto;
 		text-align: center;
 		margin-top: 25px;
 		padding: 18px 43px 20px 22px;
+
+		&:last-child {
+			margin-left: 0;
+		}
 	}
 }
