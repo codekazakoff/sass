@@ -47,24 +47,6 @@ $(document).ready(function () {
           slidesToShow: 2,
         },
       },
-      {
-        breakpoint: 995,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 770,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 476,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
     ],
   });
 });
