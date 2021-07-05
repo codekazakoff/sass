@@ -47,6 +47,24 @@ $(document).ready(function () {
           slidesToShow: 2,
         },
       },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1.5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      // {
+      //   breakpoint: 1125,
+      //   settings: {
+      //     slidesToShow: 2,
+      //   },
+      // },
     ],
   });
 });
