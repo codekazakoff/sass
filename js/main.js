@@ -34,12 +34,13 @@ $(document).ready(function () {
       },
     ],
   });
-
   $(".blog__cards").slick({
     dots: true,
     speed: 1000,
     arrows: false,
+    infinite: true,
     slidesToShow: 2,
+    autoplaySpeed: 800,
     responsive: [
       {
         breakpoint: 1100,
