@@ -1,7 +1,8 @@
 @import '_grid';
 @import '_virable';
 .map {
-	width: 100%;
+   width: 100%;
+   margin-top: 100px;
 	&__container {
 			max-width:1060px;
 			max-height:668px;

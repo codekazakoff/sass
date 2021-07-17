@@ -1,7 +1,7 @@
-@mixin display($display,$justify,$aligin) {
+@mixin display($display,$justify,$align) {
 	display: $display;
 	justify-content: $justify;
-	align-items: $aligin;
+	align-items: $align;
 }
 @mixin font($fontWeight, $lineHeight,$fontSize){
 	font-weight: $fontWeight;

@@ -1,158 +1,203 @@
+
 @import '_grid';
 @import '_virable';
-.blog {
-	margin: 0 auto;
-	padding: 100px 0;
-	max-width: 1380px;
-	&__container {
-		max-width:1210px;
-		margin-left: auto;
-	}
-	&__title {
-		font-family: 'Playfair Display',serif;
-		@include font(700,32,32);
-		color: $text-color;
-		letter-spacing: 4%;
-	}
-	&__text-btn {
-		@include display(flex,space-between,center);
-	}
-	&__text {
-		max-width:555px;
-		padding-top: 8px;
-		color: #848199;
-		@include font(normal,24,14);
-	}
-	.blog__text-btn a{
-		color  : $white;
-		display: inline-block;
-		background-color : $orange;
-		border-radius: $borderRadius;
-		padding: 12px 26px 12px 12px;
-	}
-	&__body {
-		margin: 42px 0px 70px 0px;
-		position: relative;
-	}
-	&__slider {
-		.slick-dots {
-			height: 4px;
-			width: 160px;
-			margin : 0 auto;
-			margin-top: 50px;
-			background-color: transparent;
-			@include display(flex,center,center);
-			button {
-				font-size: 0;
-				width: 55px;
-				height: 4px;
-			}
-			.slick-active button {
-				background-color: $orange;
-			}
-		}
-	}
-	.blog__slider-item {
-		min-width:526px;
-		margin-right: 21px;
-		background : $white;
-		border-radius: 7.1px;
-		@include display(flex,center,flex-start);
-		border: 0.912662px solid rgba(0, 0, 0, 0.1);
-		
-		&-img {
-			width: 100%;
-			height: 100%;
 
-			img {
-				object-fit: cover;
-				width: 100%;
-				margin-top: 2px;
 
-			}
-		}
+.blog{
+   margin: 45px 0 120px 0;
+   max-width:1366px;
+   margin: 0 auto;
+   &__title {
+      color: #04004D;
+      font-style: normal;
+      letter-spacing: 0.04em;
+      @include font(bold,32,32);
+      font-family: Playfair Display;
+   }
+   &__content {
+      margin-top: 8px;
+      @include display(flex,space-between,flex-start);
+   }
+   &__text {
+      max-width:555px;
+      color: #848199;
+      font-style: normal;
+      @include font(normal,24,14);
+   }
+   &__btn-link {
+      width: 138px;
+      color : #fff;
+      border-radius: 4px;
+      padding: 12px 18px;
+      background: #FF5722;
+      display: inline-block;
+   }
+   &__body {
+      margin-top: 42px;
+   }
+   &__cards {
+      @include display(flex,space-between,center);
+   }
+   &__card {
+      cursor: pointer;
+      margin-right: 20px;
+      background: #FFFFFF;
+      border-radius: 7.30129px;
+      @include display(flex,space-between,center);
+      border: 0.912662px solid rgba(0, 0, 0, 0.1);
+   }
+   &__card-img {
+      // min-height: 209px;
+      img{
+         height:100%;
+      }
+   }
+   &__card-body {
+      padding: 16px 16px 22px 16px;
 
-		&-content {
-			padding: 14.43px 17.39px 20.05px 15.81px;
-			&-top {
-				@include display(flex,space-between,center);
-				color: #808080;
-				div{
-					@include font(500,12.78,12.78);
-				}
-				span{
-					@include font(400,10.95,10.95);
-				}
-			}
-			&-title {
-				color: #3d3d3d;
-				margin: 10.95px 0px 7.3px 0px;
-				@include font(600,27.4,16.43);
-			}
+      &-header {
+         @include display(flex,space-between,center);
+         span {
+            color: #808080;
+            font-style: normal;
+            @include font(500,13,12.7773);
+         }
+      }
+      &-title {
+         color: #3D3D3D;
+         font-style: normal;
+         margin: 10px 0px 8px 0px;
+         @include font(600,27,16.4279);
+      }
+      &-text {
+         color: #4D4D4D;
+         font-style: normal;
+         @include font(normal,20,10.9519);
+      }
+      &-footer {
+         @include display(flex,space-between,center);
+         &-user  {
+            @include display(flex,space-between,center);
 
-			&-text {
-				color: #4d4d4d;
-				min-width: 284px;
-				margin-bottom: 14.46px;
-				@include font(400,20.08,10.95);
-			}
-			&-footer {
-				@include display(flex,space-between,center);
-
-				.left {
-					@include display(flex,center,center);
-
-					img {
-						width: 29.22px;
-						height: 29.21px;
-					}
-					span {
-						color: #999;
-						margin-left: 7.31px;
-						@include font(400,12.78,11.86);
-					}
-				}
-				.more {
-					color: $orange;
-					@include font(500,19.17,12.78);
-				}
-			}
-		}
-	}
+            span {
+               color: #999999;
+               margin-left: 10px;
+               font-style: normal;
+               @include font(normal,13,11.8646);
+            }
+         }
+         &-link {
+            color: #FF5722;
+            text-align: right;
+            font-style: normal;
+            @include font(500,19,12.7773);
+         }  
+      
+      }
+   }
+}
+.slick-initialized .slick-slide {
+   display: flex;
+}
+.slick-dots {
+   height: 4px;
+   width: 160px;
+   left:40%;
+   bottom : -50px;
+   position:absolute;
+   background-color: transparent;
+   @include display(flex,center,center);
+   button {
+      font-size: 0;
+      width: 55px;
+      height: 4px;
+   }
+   .slick-active button {
+      background-color: $orange;
+   }
 }
 
+@media (max-width:1099px) {
+   .blog {
 
+      &__card {
+         margin-right: 0;
+      }
+      &__card-img {
+         width: 299px;
 
-
-@media (max-width: 1225px) {
-	.blog__container {
-		padding: 0 15px;
-	 }
-	 .blog__header {
-		 padding-left: 12px;
-	 }
+         img{
+            width: 299px;
+            height: 209px;
+         }
+      }
+   }
 }
 
-@media (max-width:1223px) {
-	.blog .blog__slider  {
-		@include display(block,center,center);
-		display: block !important;
-	}
+@media (max-width:800px){
+   .blog__card-img {
+      width: 209px;
+      height: 209px;
+
+      img{
+         width: 209px;
+      }
+   }
 }
 
-@media (max-width: 994px) {
-	.blog__slider-item-img {
-		  margin-top: -2px;
-	}
-	.blog__btn {
-		margin-right: 25px;
-	}
-	
+@media (max-width:768px) {
+   .blog{
+      &__content {
+         display: block;
+      }
+      &__title {
+         text-align: center;
+      }
+      &__text {
+         text-align: center;
+         margin: 16px auto;
+      }
+      &__btn-link{
+         width: 158px;
+         display: block;
+         margin: 0 auto;
+         font-size: 16px;
+         text-align: center;
+      }
+      &__card-img {
+         width: 209px;
+
+         img{
+            width: 209px ;
+            height: 209px;
+         }
+      }
+   }
 }
 
+@media (max-width:576px) {
+   .blog {
 
-@media (max-width: 767px) and (min-width:578px) {
-.blog__slider-item {
-		@include display(flex,center,center);
-	}
+      &__card {
+         margin-right: 0;
+         margin-left: 0.4px;
+         border-radius: 7.30129px 0 0 7.30129px;
+         @include display(block, center, center);
+      }
+      &__card-img {
+         width: 100%;
+
+         img{
+            width: 100%;
+            height: 209px;
+            margin-left: 0.4px;
+         }
+      }
+   }
+   .slick-initialized .slick-slide {
+      display: block;
+   }
+   .slick-dots { 
+      left:30%;
+   }
 }

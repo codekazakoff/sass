@@ -35,36 +35,18 @@ $(document).ready(function () {
     ],
   });
 
-  $(".blog__slider").slick({
-    slidesToShow: 2,
+  $(".blog__cards").slick({
     dots: true,
     speed: 1000,
     arrows: false,
+    slidesToShow: 2,
     responsive: [
       {
-        breakpoint: 1125,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1.5,
-        },
-      },
-      {
-        breakpoint: 768,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 1,
         },
       },
-      // {
-      //   breakpoint: 1125,
-      //   settings: {
-      //     slidesToShow: 2,
-      //   },
-      // },
     ],
   });
 });
