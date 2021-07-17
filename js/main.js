@@ -39,6 +39,7 @@ $(document).ready(function () {
     speed: 1000,
     arrows: false,
     infinite: true,
+    autoplay: true,
     slidesToShow: 2,
     autoplaySpeed: 800,
     responsive: [
