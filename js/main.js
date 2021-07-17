@@ -41,7 +41,7 @@ $(document).ready(function () {
     infinite: true,
     autoplay: true,
     slidesToShow: 2,
-    autoplaySpeed: 800,
+    autoplaySpeed: 1200,
     responsive: [
       {
         breakpoint: 1100,

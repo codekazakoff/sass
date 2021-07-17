@@ -1602,6 +1602,9 @@ img {
   align-items: center;
   border: 0.912662px solid rgba(0, 0, 0, 0.1);
 }
+.blog__card-img {
+  height: 102%;
+}
 .blog__card-img img {
   height: 100%;
 }
@@ -1738,7 +1741,7 @@ img {
     margin-right: 0;
     margin-left: 0.4px;
     border-radius: 7.30129px 0 0 7.30129px;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -1747,7 +1750,6 @@ img {
   }
   .blog__card-img img {
     width: 100%;
-    height: 209px;
     margin-left: 0.4px;
   }
 
